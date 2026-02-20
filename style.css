@@ -1,0 +1,148 @@
+.gold-text {
+    background: linear-gradient(90deg, #FFD700, #ffcc00, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #2b2b2b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* HERO */
+.hero {
+    background-image: url('https://static.wikia.nocookie.net/logopedia/images/5/59/Transangels.png/revision/latest?cb=20171110072549');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 36px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+/* CONTENT */
+.content {
+    padding: 40px 30px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.content h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.content ul {
+    margin: 15px 0 25px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b30000;
+    transform: translateY(-2px);
+}
+
+.center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* GALLERY SECTION */
+.gallery-section {
+    padding: 40px 30px;
+    border-top: 1px solid #444;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* VIDEO SECTION */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    color: #888;
+    border-top: 1px solid #444;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .content, .gallery-section {
+        padding: 25px 20px;
+    }
+}
