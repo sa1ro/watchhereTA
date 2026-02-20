@@ -27,7 +27,7 @@ body {
 
 /* HERO */
 .hero {
-    background-image: url('https://static.wikia.nocookie.net/logopedia/images/5/59/Transangels.png/revision/latest?cb=20171110072549');
+    background-image: url('ta.png');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
